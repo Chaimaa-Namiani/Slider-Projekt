@@ -1,0 +1,107 @@
+html {
+    background-color:  rgb(130, 83, 50);
+    color: rgb(235, 232, 232);
+}
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+section {
+    min-height: 66vh;
+   
+}
+.slider-title{
+    text-align: center;
+    margin: 33px;
+   
+}
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1040px;
+    margin: 0 70px 55px;
+    height: 290px;
+    width: 100%;
+}
+.book-slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-list .card-item {
+    color: aliceblue;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-list .card-item .user {
+    width: 150%;
+    height:auto ;
+    padding: 1px;
+}
+.card-list .card-item .img-user {
+    padding: 0;
+    margin: 0;
+   
+}
+.card-list .card-item .img-user h3 {
+    font-size:medium;
+    color: rgb(235, 232, 232);
+    width: 200px;
+}
+.card-list .card-item h3:hover {
+  color:  rgb(98, 57, 28);
+  cursor: pointer;
+}
+.card-list .card-item p {
+    font-size:small;
+    color: rgb(236, 178, 138);
+    text-decoration: underline solid;
+    font-weight: 500;
+}
+.card-list .card-item p:hover {
+  color:  rgb(98, 57, 28);
+  cursor: pointer;
+}
+/* points bottom */
+.book-slider-container .swiper-pagination-bullet {
+  background-color:  rgb(130, 83, 50);
+}
+/* les fleches aside */
+.book-slider-container .swiper-slide-button {
+  
+   margin-top: -85px;
+   transition: 0.2s ease;
+   color:white;
+}
+.book-slider-container .swiper-slide-button:hover {
+    color: rgb(98, 57, 28) ;
+    cursor: pointer;
+}
+/* Modifier la taille des flèches */
+.swiper-button-next, .swiper-button-prev {
+    width: 50px; 
+    height: 50px; 
+}
+
+/* Réduire la taille de l'icône des flèches */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    font-size: 18px !important; /* Réduction de la taille de l'icône */
+}
+
+/* Ajuster leur position pour qu'elles restent visibles */
+.swiper-button-next {
+    right: 10px; 
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
