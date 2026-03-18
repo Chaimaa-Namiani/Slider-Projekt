@@ -1,27 +1,22 @@
-const swiper = new Swiper('.slider-wrapper', {
-  slidesPerView: 5,
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
   loop: true,
-  grabCursor: false,
   spaceBetween: 10,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // Responsive breakpoints
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
   breakpoints: {
-    1024: { 
-     slidesPerView: 6
-    },
-    768: { 
-     slidesPerView: 3
-    },
-    480: { 
-     slidesPerView: 2
-    },
-    320: { 
-      slidesPerView: 1
-     }
-}
+    320: { slidesPerView: 1 },
+    480: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 5 },
+  }
 });
